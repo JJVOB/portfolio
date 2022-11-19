@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* Corpo*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-size: 12px 'Poppins', Arial, sans-serif;
+}
+
+.header-container {
+    background-color: black;
+    padding: 5px 160px;
+    height: 200px;
+}
+
+
+/* links */
+
+a:link,
+a:active,
+a:visited {
+    color: #f4f2ec;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b77eb3;
+}
+
+a.contato {
+    color: black;
+    text-decoration: none;
+}
+
+a.contato:hover {
+    color: #b77eb3;
+    
+}
+
+a.ver-mais-projetos {
+    text-decoration: none;
+    color: black;
+    padding: 1rem 4rem;
+    border: 1px solid black;
+    min-width: 4rem;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+a.ver-mais-projetos:hover {
+    color: white;
+}
+
+
+
+/* navegação */
+
+nav ul {
+    list-style: none;
+    margin: 50px;
+    float: right;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a:link {
+    display: block;
+    margin-right: 25px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+
+/*  textos */
+
+h1 {
+    color: white;
+    font-size: 15px 'Poppins', Arial, sans-serif;
+}
+
+
+/*  sessões */
+
+#sessao-sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 10px 10px 20px 20px;
+    background-color: #f3d0f1;
+}
+
+#sessao-redes-sociais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    padding: 50px 30px 50px 10px;
+    background-color: white;
+}
+
+#ver-mais-projetos{
+    margin-top: 1rem;
+    display: flex;
+}
+
+
+/*  sessão de rede sociais: faz a animação dos botões */
+
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem 4rem;
+    border: 1px solid black;
+    min-width: 4rem;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+a.social-media-link:hover {
+    background-color: #b77eb3;
+}
+
+
+/* dividindo em linhas */
+
+
+
+.ft{
+    background-color: whitesmoke;
+    font-size: none;
+}
