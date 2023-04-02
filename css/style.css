@@ -1,11 +1,19 @@
 /*   */
 
+    body,
+    html,
+            #home {
+                height: 100%;
+                overflow-x: hidden;
+            }
+
 body, ul , li, p {
     margin: 0px;
     padding: 0px;
     list-style: none;
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
+
     }
     
     a{
@@ -25,7 +33,7 @@ body, ul , li, p {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
+        padding: 45px;
     }
 
     .menu{
@@ -97,11 +105,111 @@ body, ul , li, p {
 
     /* Sessões  */
 
-        /* Sessão Sobre mim */
+        /* GRID 1 -  Sessão Sobre mim */
 
-    
-    .sobreMim a{
-        color: black;
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+    margin: 0 auto;
+    max-width: 1620px;
+    padding: 18px;
+}
+.grid1-item:nth-child(1){
+    grid-row: 1/1;
+}
+
+
+.contato {
+    color: black;
+    text-decoration: none;
+}
+    /* GRID 2 -  Sessão Sobre mim */
+
+.grid2 {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-gap:20px;
+        margin: 0 auto;
+        max-width: 1620px;
+        padding: 18px;
+}
+
+.grid2-slide:nth-child(1){
+        grid-row: 1/1;
+}
+
+
+
+
+    /* Slides  -  Projetos */
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575.98px) {
+    /*  Extra small devices (portrait phones, less than 576px)*/
+    .btn-custom {
+        margin: 10px 15px;
+        padding: 1px;
     }
+}
 
-    
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Small devices (landscape phones, 576px and up)*/
+    h1 {
+        font-size: 3em;
+    }
+    .btn-custom {
+        margin: 10px 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* // Medium devices (tablets, 768px and up)*/
+    h1 {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /*   // Large devices (desktops, 992px and up) */
+    h1 {
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    /*  // Extra large devices (large desktops, 1200px and up)*/
+    h1 {
+        font-size: 6em;
+    }
+}
